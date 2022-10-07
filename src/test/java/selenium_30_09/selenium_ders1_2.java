@@ -1,13 +1,14 @@
 package selenium_30_09;
 
+import PageClass.Amazon.AmazonHomePage;
+import PageClass.Amazon.LoginPage;
+import PageClass.Youtube.Youtube_HomePage;
+import PageClass.Youtube.Youtube_findLinkClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.bouncycastle.asn1.dvcs.DVCSObjectIdentifiers;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -212,12 +213,16 @@ public class selenium_ders1_2 {
         driver1.manage().window().maximize();
         driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver1.get("https://www.youtube.com/");
-
         WebDriverWait wait1 = new WebDriverWait(driver1, Duration.ofSeconds(5));
-        wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
-        WebElement searchbut = driver1.findElement(By.xpath("//input[@id='search']"));
-        searchbut.sendKeys("gel gonlumu yerden yere ");
-        searchbut.sendKeys(Keys.ENTER);
+        Youtube_HomePage youtube = new Youtube_HomePage(driver1);
+        youtube.WriteSearchButton("gel gonlumu yerden yere");
+        youtube.clicksearcbutton();
+        Youtube_findLinkClass linkClass = new Youtube_findLinkClass(driver1);
+        linkClass.ClickLink();
+        //wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
+        //WebElement searchbut = driver1.findElement(By.xpath("//input[@id='search']"));
+        //searchbut.sendKeys("gel gonlumu yerden yere ");
+        //searchbut.sendKeys(Keys.ENTER);
 
     }
 
@@ -269,25 +274,16 @@ public class selenium_ders1_2 {
         drivermain.manage().window().maximize();
         drivermain.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         drivermain.get("https://www.amazon.com.tr");
-        Actions actions =new Actions(drivermain);
+        AmazonHomePage hp = new AmazonHomePage(drivermain);
+        hp.clickSignin();
+        LoginPage lp = new LoginPage(drivermain);
+        lp.writeEmailMetod("iberkayuslu41@gmail.com");
+        lp.clickcontinue();
+        lp.writePassword("123789465B");
+        lp.clicksignButton();
+        hp.searchKeys("gülen adam");
+        hp.clickSSearchBButton();
 
-        WebElement moveTO = drivermain.findElement(By.xpath("//span[text()='Hesap ve Listeler']"));
-        actions.moveToElement(moveTO).build().perform();
-        drivermain.findElement(By.linkText("Giriş yap")).click();
-        WebElement loginEmail = drivermain.findElement(By.id("ap_email"));
-        loginEmail.sendKeys("iberkayuslu41@gmail.com");
-        WebElement loginbutton = drivermain.findElement(By.id("continue"));
-        loginbutton.click();
-        WebElement loginpassword = drivermain.findElement(By.id("ap_password"));
-        loginpassword.sendKeys("123789465B");
-        WebElement loginbutton1 = drivermain.findElement(By.id("signInSubmit"));
-        loginbutton1.click();
-        //WebElement doubleClick = drivermain.findElement(By.id("nav-hamburger-menu"));
-        //actions.clickAndHold(doubleClick).build().perform();
-
-        WebElement keyuptrying = drivermain.findElement(By.id("twotabsearchtextbox"));
-        keyuptrying.click();
-        actions.keyDown(Keys.SHIFT).sendKeys("omer karsli").keyUp(Keys.SHIFT).sendKeys(Keys.ENTER).build().perform();
 
         //WebElement clickpropagation = drivermain.findElement(By.id("//@id='nav-flyout-ya-signin'"));
         //clickpropagation.click();
@@ -305,6 +301,7 @@ public class selenium_ders1_2 {
 
     @Test // ek sekme acarak islemleri devam ettirdik ...
     public void newWindowOpen(){
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver2 = new ChromeDriver();
         WebDriverWait wait1 = new WebDriverWait(driver2,Duration.ofSeconds(5));
