@@ -305,6 +305,7 @@ public class selenium_ders1_2 {
 
     @Test // ek sekme acarak islemleri devam ettirdik ...
     public void newWindowOpen(){
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver2 = new ChromeDriver();
         WebDriverWait wait1 = new WebDriverWait(driver2,Duration.ofSeconds(5));

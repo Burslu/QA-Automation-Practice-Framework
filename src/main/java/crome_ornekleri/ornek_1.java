@@ -346,8 +346,26 @@ public class ornek_1 {
 //
 //    private static int buyuk() {
 
+        //girilin ad soyadi ilk harfleri buyuk kalan harfleri kucuk yapan method create ediniz ...
 
-   }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("isminizi giriniz;");
+        String isim    = scanner.nextLine();
+        System.out.println("soy isminizi giriniz;");
+        String soyIsim = scanner.nextLine();
+
+        isimsoyIsimyazdir("isimDeneme","SoyIsimDeneme");
+        isimsoyIsimyazdir(isim,soyIsim);
+
+           }//main metod kapanma kismi
+
+    private static void isimsoyIsimyazdir(String ad, String soyIsim) {
+
+        System.out.println(ad = ad.substring(0, 1).toUpperCase() + ad.substring(1).toLowerCase());
+        System.out.println(soyIsim = soyIsim.substring(0, 1).toUpperCase() + soyIsim.substring(1).toLowerCase());
+    }
+
 
 }
 
