@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.Scanner;
 
 public class selenium_ders1_2 {
     @Test
@@ -232,7 +233,7 @@ public class selenium_ders1_2 {
         WebDriverManager.chromedriver().setup();
         WebDriver driver1 = new ChromeDriver();
         //driver konfirgurasyon yap
-
+      //  driver1.getWindowHandles();
         driver1.manage().window().maximize();
         driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver1.get("https://www.amazon.com/");
