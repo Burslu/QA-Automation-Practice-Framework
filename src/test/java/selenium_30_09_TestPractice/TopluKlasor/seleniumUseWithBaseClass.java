@@ -1,11 +1,10 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import Base.BaseClassTestORnek02;
 import PageClass.PageClass_WithBaseCase.HomePage;
 import PageClass.PageClass_WithBaseCase.SearchMusicAndFindClick;
 import PageClass.PageClass_WithBaseCase.UserNameLoginClass;
 import PageClass.PageClass_WithBaseCase.Click_last_Step;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;

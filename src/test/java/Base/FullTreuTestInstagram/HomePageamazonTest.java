@@ -6,54 +6,46 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
-public class HomePageInstagramTest {
+public class HomePageamazonTest {
 
     private WebDriver ldriver;
 
 
 
-    public HomePageInstagramTest(WebDriver gdriver){
+
+    public HomePageamazonTest(WebDriver gdriver){
         ldriver=gdriver;
     }
-    By loginFormUserName = By.name("username");
-    By loginFormPassword = By.xpath("//*[@type='password']");
-    By registerButton    = By.xpath("//*[@type='submit']");
-    By erorMassage       = By.id("slfErrorAlert");
+    By loginForAcount = By.xpath("(//*[@class='nav-line-1-container'])");
+    By continueButTest = By.id("continue");
+
     private WebElement getloginForm(){
-        return ldriver.findElement(loginFormUserName);
+        return ldriver.findElement(loginForAcount);
     }
-    private WebElement getPassword(){
-        return ldriver.findElement(loginFormPassword);
-    }
-    private WebElement getRegisterButton(){
-        return ldriver.findElement(registerButton);
-    }
-    private WebElement geterorMassege(){
-        return ldriver.findElement(erorMassage);
+    private WebElement getcontinue(){
+        return ldriver.findElement(continueButTest);
     }
 
 
 
-    public void loginFormFindAndSendUsername(String userName) {
 
+    public void AmazonMainPage() {
+        AmazonMainPage02();
+        Assert.assertTrue(getcontinue().getAttribute("id").contains("continue"));
+    }
+    public void AmazonMainPage02() {
         Actions action = new Actions(ldriver);
-        action.moveToElement(getloginForm()).click().sendKeys(userName).build().perform();
+        action.moveToElement(getloginForm()).click().build().perform();
+
     }
-    public void LoginFormFindAndSendPassword(String Passwrod){
-        Actions action = new Actions(ldriver);
-        action.moveToElement(getPassword()).click().sendKeys(Passwrod).build().perform();
-    }
-    public void registerButtonClick(){
-        getRegisterButton().click();
-    }
-    //Wrong Fail Test();
-    public void loginWrongFindAndSendUsername(String userName,String Passwrod) throws InterruptedException {
-        Actions action = new Actions(ldriver);
-        action.moveToElement(getloginForm()).click().sendKeys(userName).build().perform();
-        action.moveToElement(getPassword()).click().sendKeys(Passwrod).build().perform();
-        getRegisterButton().click();
-        Thread.sleep(5000);
-        Assert.assertTrue( geterorMassege().getAttribute("id").contains("slfErrorAlert"));
-    }
+
+
+
+
+
+
+
+
+
 
 }

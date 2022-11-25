@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class Artık_yıl_hesaplama {
     public static void main(String[] args) {
-        int yil;
+        int year;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("yil giriniz");
-        yil = scanner.nextInt();
+        System.out.println("Enter Year");//yil giriniz.
+        year = scanner.nextInt();
 
-        if ((yil % 4 ==0) && (yil %100 !=0) || (yil % 400 == 0)){
-            System.out.println("artik yil");
+        if ((year % 4 ==0) && (year %100 !=0) || (year % 400 == 0)){//if blogu icerisinde Genel bir kural olarak, artık yıllar 4 rakamının katı olan yıllardır,
+            // 100'ün katı olan yıllardan sadece 400'e kalansız olarak bölünebilenler artık .
+            System.out.println("Leap Year"+ year);
         }else {
-            System.out.println("bir artik yil degildir.");
+            System.out.println("This is a not Leap Year"+ year);
         }
         scanner.close();
     }

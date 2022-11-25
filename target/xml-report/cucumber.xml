@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.043">
+    <testcase classname="Check Google" name="Validate" time="10.853">
+        <system-out><![CDATA[Given borwsers is open......................................................passed
+And users is on google search page..........................................passed
+When users enters username "iberkayuslu_41@hotmail.com".....................passed
+When users enters password "123789465Bb"....................................passed
+And hitss enter.............................................................passed
+Then users is navigated to search result....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

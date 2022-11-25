@@ -1,4 +1,4 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import Base.BaseClassTestORnek02;
 import org.apache.commons.io.FileUtils;

@@ -1,15 +1,8 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import Base.BaseTest;
 import PageClass.Spotify_muzikAcma.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 public class selenium_Ders02_Spotify extends BaseTest {
 

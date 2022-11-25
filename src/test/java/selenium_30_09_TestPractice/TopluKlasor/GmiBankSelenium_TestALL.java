@@ -1,4 +1,4 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import Base.GmibankBaseClass;
 import PageClass.Amazon.GmiBankTestCase.TestClass;

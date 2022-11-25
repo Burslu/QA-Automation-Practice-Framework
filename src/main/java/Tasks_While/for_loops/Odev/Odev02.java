@@ -1,4 +1,4 @@
-package methodCreation.for_loops.Odev;
+package Tasks_While.for_loops.Odev;
 
 import java.util.Scanner;
 

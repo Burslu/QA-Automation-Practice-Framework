@@ -1,4 +1,4 @@
-package selenium_30_09.SeleniumGmiBankTest;
+package selenium_30_09_TestPractice.SeleniumGmiBankTest;
 
 import Base.GmibankBaseClass;
 import PageClass.Amazon.Gmibank.RegisterPage;

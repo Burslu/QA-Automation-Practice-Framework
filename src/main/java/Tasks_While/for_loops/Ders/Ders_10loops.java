@@ -1,4 +1,4 @@
-package methodCreation.for_loops.Ders;
+package Tasks_While.for_loops.Ders;
 
 public class Ders_10loops {
     public static void main(String[] args) {

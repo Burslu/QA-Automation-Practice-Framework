@@ -1,4 +1,4 @@
-package methodCreation.for_loops.OrnekVeTask;
+package Tasks_While.for_loops.OrnekVeTask;
 
 import java.util.Scanner;
 

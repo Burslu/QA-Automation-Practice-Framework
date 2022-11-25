@@ -12,7 +12,7 @@ public class login_UserNameAndPassword {
         ldriver=gdriver;
 
     }
-    By UserName         = By.id("login-username");
+    By UserName      = By.id("login-username");
     By LoginPassword = By.id("login-password");
 
     By LoginClickButton = By.id("login-button");

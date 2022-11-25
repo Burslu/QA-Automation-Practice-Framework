@@ -1,4 +1,4 @@
-package PageClass.Spotify_muzikAcma02Ornek2;
+package PageClass.PageClass_WithBaseCase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

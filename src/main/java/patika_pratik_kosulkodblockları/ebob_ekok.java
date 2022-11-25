@@ -6,28 +6,29 @@ public class ebob_ekok {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("N1 sayisini giriniz:");
-        int n1 = scanner.nextInt();
+        System.out.println("Enter smallNumber number:");
+        int smallNumber = scanner.nextInt();
 
-        System.out.println("N2 sayisini giriniz:");
-        int n2 = scanner.nextInt();
-        int ebob=1;
-        for (int i=0; i<=n1; i++){
-            if (n1 % i ==0  &&  n2 % i==0){
-                System.out.println(i);
-                ebob=i;
+        System.out.println("Enter largesNumber number:");
+        int largeNumber = scanner.nextInt();
+        int t = 1;
+        int ebob =1;
+        int ekok =1;
+
+        while (t<=smallNumber && t<=largeNumber){
+            if (smallNumber % t == 0 && largeNumber % t == 0){
+                ebob = t;
+            }
+            t++;
+        }
+        System.out.println("Ebob :" + ebob);
+
+        while (t<=(largeNumber*smallNumber)){
+            if (t % smallNumber == 0 && t % largeNumber ==0){
+                ekok = t;
             }
         }
-        for (int k=n1; k>=1; k--){
-            if (n1 % k==0 && n2 % k==0){
-                ebob=k;
-                System.out.println("ebob");
-                break;
-            }
-        }
-
-
-
+        System.out.println("Ekok"+ekok);
 
 
     }

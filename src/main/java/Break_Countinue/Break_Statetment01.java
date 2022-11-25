@@ -26,7 +26,7 @@ public class Break_Statetment01 {
             if (c=='@'){//c de @ var ise if blogu run edilir
                 break;//if blok loopu sonlandirir.
             }
-            System.out.println(c);
+            System.out.print(c);
         }
 
     }

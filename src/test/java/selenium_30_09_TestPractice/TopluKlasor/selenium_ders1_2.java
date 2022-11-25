@@ -1,4 +1,4 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import PageClass.Amazon.AmazonHomePage;
 import PageClass.Amazon.LoginPage;
@@ -14,7 +14,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.Scanner;
 
 public class selenium_ders1_2 {
     @Test

@@ -1,4 +1,4 @@
-package PageClass.PageClass_GmibankTest;
+package PageClass.Amazon.PageClass_GmibankTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

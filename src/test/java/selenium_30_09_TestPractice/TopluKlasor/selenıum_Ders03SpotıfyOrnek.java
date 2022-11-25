@@ -1,19 +1,12 @@
-package selenium_30_09.TopluKlasor;
+package selenium_30_09_TestPractice.TopluKlasor;
 
 import Base.BaseTest;
 import PageClass.Spotify_muzikAcma02Ornek2.Find_new_SongPage;
 import PageClass.Spotify_muzikAcma02Ornek2.HomePage_Spotıfy;
 import PageClass.Spotify_muzikAcma02Ornek2.MainclassLogin;
 import PageClass.Spotify_muzikAcma02Ornek2.open_Button;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-
-import java.time.Duration;
 
 public class selenıum_Ders03SpotıfyOrnek extends BaseTest {
 

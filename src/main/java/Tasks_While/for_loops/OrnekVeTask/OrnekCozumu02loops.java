@@ -1,4 +1,4 @@
-package methodCreation.for_loops.OrnekVeTask;
+package Tasks_While.for_loops.OrnekVeTask;
 
 public class OrnekCozumu02loops {
     public static void main(String[] args) {

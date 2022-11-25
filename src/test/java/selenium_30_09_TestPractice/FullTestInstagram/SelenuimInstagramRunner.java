@@ -1,4 +1,4 @@
-package selenium_30_09.FullTestInstagram;
+package selenium_30_09_TestPractice.FullTestInstagram;
 
 import Base.FullTreuTestInstagram.AmazonLoginPage;
 import Base.FullTreuTestInstagram.HomePageamazonTest;

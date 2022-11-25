@@ -1,4 +1,4 @@
-package methodCreation.for_loops.OrnekVeTask;
+package Tasks_While.for_loops.OrnekVeTask;
 
 import java.awt.font.FontRenderContext;
 import java.util.Scanner;
@@ -44,5 +44,4 @@ public class Baklava_DesenliYildiz {
   * * * *
    * * *
     * *
-    seklini creat ediniz...
  */

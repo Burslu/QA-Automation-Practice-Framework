@@ -1,4 +1,4 @@
-package methodCreation.for_loops.OrnekVeTask;
+package Tasks_While.for_loops.OrnekVeTask;
 
 public class Task11_Nested {
     public static void main(String[] args) {

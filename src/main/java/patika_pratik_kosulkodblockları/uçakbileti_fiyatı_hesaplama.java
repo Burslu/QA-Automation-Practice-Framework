@@ -9,13 +9,13 @@ public class uçakbileti_fiyatı_hesaplama {
         int yolculukTipi;
         Scanner scanner =new Scanner(System.in);
 
-        System.out.println("Kaç km ucacaksiniz:");
+        System.out.println("how many km will you fly :");
         mesafe = scanner.nextInt();
 
-        System.out.println("yasinizi giriniz:");
+        System.out.println("Please Enter your age :");
         age = scanner.nextInt();
 
-        System.out.println("yolculuk tipini giriniz(tek yön gidis donüs 1=>tek yön,2=>GİDİS DONUS):");
+        System.out.println("Enter trip type = \nOne way or Round trip \n1=>One way,\n2=>Raund trip:");
         yolculukTipi = scanner.nextInt();
         toplam = mesafe * 0.10;
 

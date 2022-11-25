@@ -1,10 +1,9 @@
-package selenium_30_09.Spotify01;
+package selenium_30_09_TestPractice.Spotify01;
 
 import Base.Spotify_Base_Class;
 import PageClass.SpotifyPageClass01.Spotify_PageClass01;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
