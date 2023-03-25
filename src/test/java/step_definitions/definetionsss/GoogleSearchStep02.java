@@ -42,6 +42,7 @@ public class GoogleSearchStep02 {
 
  @When("users enters a text  search box")
  public void usersEntersATextSearchBox() {
+
         lp.enterPassword("123789465B");
     }
     @When("users enters username {string}")

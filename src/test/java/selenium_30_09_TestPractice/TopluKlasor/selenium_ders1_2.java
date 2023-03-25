@@ -315,9 +315,6 @@ public class selenium_ders1_2 {
 
 
     }
-
-
-
 }
 
 

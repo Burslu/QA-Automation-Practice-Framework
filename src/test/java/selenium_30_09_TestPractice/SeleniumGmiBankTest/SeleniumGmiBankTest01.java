@@ -32,7 +32,6 @@ public class SeleniumGmiBankTest01 extends GmibankBaseClass {
         homePage.clickHomeaboutus();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.gmibank.com/about");
 
-
     }
 
     @Test

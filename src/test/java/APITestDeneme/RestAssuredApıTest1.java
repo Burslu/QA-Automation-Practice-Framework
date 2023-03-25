@@ -12,8 +12,8 @@ public class RestAssuredApıTest1 {
     public void singleUserTest(){
         when()
                 .get("https://reqres.in/api/users/2")
-                .then()
                 //Test assert kisimimiz.
+                .then()
                 .statusCode(200)
                 .body("data.avatar",equalTo("https://reqres.in/img/faces/2-image.jpg"))
                 .time(lessThan(1000l));

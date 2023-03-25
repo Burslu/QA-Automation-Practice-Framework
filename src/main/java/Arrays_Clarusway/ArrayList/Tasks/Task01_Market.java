@@ -2,7 +2,7 @@ package Arrays_Clarusway.ArrayList.Tasks;
 
 import java.util.Arrays;
 
-public class Task01_Market {
+public class Task01_Market extends Task03{
     /* TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
      * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.

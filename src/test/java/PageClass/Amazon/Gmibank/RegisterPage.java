@@ -49,6 +49,7 @@ public class RegisterPage {
 
     }
     public void VerifyErorFirtName(){
+
         Assert.assertTrue(getVerifyErorFirstName().isDisplayed());
     }
 
